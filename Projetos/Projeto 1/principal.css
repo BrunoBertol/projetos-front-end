@@ -41,6 +41,11 @@ main > section.normal {
     background-color: white;
 }
 
+main > section.image {
+    background-color: grey;
+    background-image: ;
+}
+
 footer {
     background-color: black;
     padding: 10px;
