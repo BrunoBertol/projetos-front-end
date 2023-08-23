@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+
+        table{
+            width: 1500px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        thead, caption{
+            border: 1px solid black;
+            background-color: rgb(174, 174, 174);
+            color: black;
+        }
+
+        tr:nth-child(even){
+            background-color: rgba(128, 128, 128, 0.56);
+            border: 1px solid black;
+        }
+
+        tr:nth-child(odd){
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        th, td{
+            border: 1px solid black;
+        }
+
+        div#container{
+            overflow-x: auto;
+        }
+
+        h1, h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando uma planilha dentro do iframe</h1>
+    <h2>Venda mensal das televisões</h2>
+    <div id="container">
+        <table>
+            <caption>Tabela</caption>
+            <thead>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV 41"</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>TV 42"</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>TV 32"</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>TV 30"</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>TV 12"</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>TV 93"</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>TV 95"</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>TV 80"</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>TV 78"</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>TV 25"</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>01</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
