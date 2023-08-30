@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        let name, age
+
+    name = "bruno bertol"
+    age = 19
+    address = {
+        street: "Rua coronel carlos bardelli",
+        city: "Foz do iguaçu"
+    }
+
+    console.log( name + " tem " + age + " anos ")
+
+    console.log(`${name} tem ${age} anos`)
+
+    console.log(`${name} tem ${age} anos. E reside em ${address}`)
+    console.log(`${name} tem ${age} anos. E reside em ${JSON.stringify (address)}`)
+
+    // FORMA ATUAL DE FAZER... (INTERPOLAÇÃO)
+
+    console.log( name + " tem " + age + " anos. E reside em " + address)
+    console.log( name + " tem " + age + " anos. E reside em " + JSON.stringify (address))
+
+    // FORMA ANTIGA DE FA\ER... (CONCATENAÇÃO)
+
+    </script>
+</body>
+</html>
