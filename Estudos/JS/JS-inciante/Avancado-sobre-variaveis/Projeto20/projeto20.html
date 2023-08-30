@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        const pessoa = {
+            nome: "Bruno Bertol",
+            idade: 19,
+            endereco: {
+                rua: "Rua coronel carlos bardelli",
+                numero: 160,
+                cidade: "Foz do Iguaçu",
+            },
+        }
+
+        console.log(pessoa.nome)
+        console.log(pessoa.idade)
+        console.log(pessoa.endereco)
+        console.log(pessoa.endereco.cidade)
+
+        pessoa.nome = "Pedro"
+        pessoa.haircolor = "preto"
+
+        console.log(`${pessoa.nome} tem ${pessoa.idade} anos e reside na cidade de ${JSON.stringify (pessoa.endereco.cidade)}.`)
+        console.log(pessoa.haircolor)
+
+
+
+    </script>
+</body>
+</html>
