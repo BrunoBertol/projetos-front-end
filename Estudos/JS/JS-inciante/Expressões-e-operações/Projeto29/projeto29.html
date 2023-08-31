@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        // Lógicos
+
+        // ou  || // qualquer expressao true torna a expressao inteira verdadeira
+        //  e  && // so é verdadeiro quando a haja (true && true) se houver algum false, toda a expressão inteira se torna false
+        // nao !
+
+//_____________________________________________________________________________________________________________________________//
+
+        //or
+
+        console.log(false ||  false)
+        console.log(true  ||  false)
+        console.log(false ||  true)
+        console.log(true  ||  true)
+
+        //and
+
+        console.log(false &&  false)
+        console.log(true  &&  false)
+        console.log(false &&  true)
+        console.log(true  &&  true)
+
+        // 2+ Misto
+
+        console.log(false && false && true) // false
+        console.log(false || false || true) // true
+        console.log(false || (false && true)) // true
+
+        // not
+
+        console.log(!true)
+        console.log(!(23<24))
+
+
+        // resultado de uma expressao (comparação) é boolean
+
+        console.log(23 < 24 && "A" == "A")
+
+        // variaveis
+
+        let A = 10
+        let B = 12
+
+        console.log((A == B) && (B < A))
+    </script>
+</body>
+</html>
