@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        // FOR IN
+
+        // obj.prop
+        // obj.['prop'] <<
+        const person = {
+            name: "Felipe", 
+            age: 40,
+            city: "Foz do Iguaçu"
+        }
+
+        for (const prop in person) {
+            console.log(`prop: ${prop} - ${person[prop]}`)
+        }
+    </script>
+</body>
+</html>
