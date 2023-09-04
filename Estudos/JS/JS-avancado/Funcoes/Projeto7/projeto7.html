@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        // callbacks
+
+        function mult(valores) {
+            for (let i = 0 ; i < valores.length ; i++ ) {
+                // valores[i] *= valores[i] // n*=n
+                valores[i] *= func(valores[i])
+            }
+            return valores
+        }
+
+        const valores = [1, 2, 3, 4, 10, 20]
+        const func = (n) => n*2
+
+        console.log(mult(valores, func))
+    </script>
+</body>
+</html>
