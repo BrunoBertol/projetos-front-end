@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        let peoples = [
+        {name: "Bruno", age: 19, gnr: "M"},
+        {name: "Felipe", age: 13, gnr: "M"},
+        {name: "Carla", age: 21, gnr: "F"},
+        ]
+
+        const A = peoples.filter((p) => p.age >= 19 && p.age <= 21 && p.gnr === "M" || p.gnr === "F")
+
+        console.log(A)
+    </script>
+</body>
+</html>
