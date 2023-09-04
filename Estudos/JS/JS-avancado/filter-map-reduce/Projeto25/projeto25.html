@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        //REDUCE
+
+        let values = [1.5, 2, 4, 10]
+
+        function callback(acumulador, currentValue, index, array) {
+            console.log('acumulador', acumulador)
+            console.log('currentValue', currentValue)
+            console.log('index', index)
+            console.log('array', array)
+            console.log('---')
+
+            return acumulador + currentValue
+        }
+
+
+
+     let sum = values.reduce((total, item) => total + item, 0)
+    console.log("sum", sum)
+
+
+
+
+    let avg = values.reduce(
+        (total, item, index) => (total + item) / (index + 1), 0)
+    
+    console.log("avg", avg)
+
+    values.reduce(callback, 0)
+    </script>
+</body>
+</html>
