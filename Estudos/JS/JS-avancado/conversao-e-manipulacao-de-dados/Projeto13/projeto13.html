@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        // casas decimais - formaraçã e arrendondamento
+
+        let value  =1234.56
+        // tofixed()
+        console.log(value.toFixed(1))
+        //math.ceil
+        console.log(Math.ceil(value))
+        // Math.floor
+        console.log(Math.floor(value))
+        // Math.round
+        console.log(Math.round(value))
+        // new intl.numberfotmat().format()
+        console.log(
+            new Intl.NumberFormat("pt-BR", {
+                style: "currency", 
+                currency: "BRL",
+           }).format(value)
+        )
+        /*
+        |* Na formatação abaixo tem varios tipos de 
+        |*valores(Formatações, como: medidas de 
+        |*distancia,  peso, etc)
+        |**/
+        
+        // console.log(
+        //     new Intl.NumberFormat("pt-BR", {
+        //         style: "currency", 
+        //         currency: "BRL",
+        //    }).format(value)
+        // )
+    </script>
+</body>
+</html>
