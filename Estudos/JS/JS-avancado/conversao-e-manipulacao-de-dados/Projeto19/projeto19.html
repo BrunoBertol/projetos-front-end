@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        // Convertendo JSON.
+
+        // JSON - JavaScript Object Notation
+        // JSON.stringfy()
+        // JSON.parse()
+
+        // A estrutura abaixo nada mais é do que um -> Array[Object{},Object{}] -> Array com dois indices que são object.
+
+        const people = [
+            {
+                id: 1,
+                name: "Bruno",
+                lastName: "Bertol",
+                bornDate: new Date(2003, 12, 23),
+                address: {
+                    City: "Foz do Iguaçu"
+                },
+            },
+            {
+                id: 2,
+                name: "Eduardo",
+                lastName: "Bertol",
+                bornDate: (2010, 2, 27),
+                address: {
+                    City: "Foz do Iguaçu",
+                },
+            }
+        ]
+
+        console.log(JSON.stringify(people)) // Conversão obj -> String/ JSON. 
+    </script>
+</body>
+</html>
