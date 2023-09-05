@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+</head>
+<body>
+
+    <h1 id="person-name" class="tittle">Bruno Bertol</h1>
+    
+    <h2>Programador Frontend</h2>
+    
+    <p>Conhecimento em programação Frontend(HTML5, CSS3, JAVASCRIPT), tenho Tambem, conhecimento da linguagem C</p>
+    
+    <p>Para mais detalhes, por favor, visite meu <a href="https://github.com/brunobertol"> Github.</a> </p>
+
+    <script>
+        // hierarquiad do dom
+        // document --> nodes --> elementes --> ttributs 
+
+
+        // console.log(document)
+        // console.log(document.body)
+
+        // const titleEl = document.getElementById("person-name")
+        // console.log("titleEl", titleEl)
+
+        // const titleEl = document.getElementsByTagName("h1")
+        // console.log("titleEl", titleEl)
+
+        const titleEl = document.getElementsByClassName("tittle")
+        console.log("titleEl", titleEl)
+
+        for (const el of titleEl) {
+            console.log("el", el    )
+        }
+    </script>
+</body>
+</html>
