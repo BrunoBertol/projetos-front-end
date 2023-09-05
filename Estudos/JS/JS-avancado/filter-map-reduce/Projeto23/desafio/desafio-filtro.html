@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+
+        //Usar reduce para um sistema que simula um filtro que simula um cadastro de pessoas com seus requisitor obrigatórios...
+//-------------------------------------------------------------// 
+        // id: "1"
+        // Nome: "Bruno"
+        // sobrenome: "Bertol"
+        // Gereno: "M"
+        // Idade: 19
+        // cidade: "Foz do Iguaçu"
+        // e-mail: Brunobert@gmail.com
+//-------------------------------------------------------------//        
+//-------------------------------------------------------------// 
+        // id: "2"
+        // Nome: "Felipe"
+        // sobrenome: "Bertol"
+        // Gereno: "F"
+        // Idade: 9
+        // cidade: "Foz do Iguaçu"
+        // e-mail: Felipebert@gmail.com
+//-------------------------------------------------------------//        
+//-------------------------------------------------------------// 
+        // id: "3"
+        // Nome: "Carlos" 
+        // sobrenome: "Ferraz"
+        // Gereno: "F" 
+        // Idade: 12
+        // cidade: "Santa Teresinha de Itaipu"
+        // e-mail: CarlinFerazSTI@outlook.com
+//-------------------------------------------------------------//        
+//-------------------------------------------------------------// 
+        // id: "4"
+        // Nome: "Eduardo"
+        // sobrenome: "Brito"
+        // Gereno: "M"
+        // Idade: 26
+        // cidade: "Foz do Jordão"
+        // e-mail: EduardoBritola@gmail.com
+//-------------------------------------------------------------//  
+
+
+        const cadastrando = [ 
+            
+            {
+                id: "4",
+                Nome: "Eduardo",
+                sobrenome: "Brito",
+                Gereno: "M",
+                Idade: "13",
+                cidade: "Foz do Jordão",
+                email: "EduardoBritola@gmail.com"
+            },
+            
+            {
+                id: "1",
+                Nome: "Bruno",
+                sobrenome: "Bertol",
+                Gereno: "M",
+                Idade: "19",
+                cidade: "Foz do Iguaçu",
+                email: "Brunobert@gmail.com"
+            },
+            {
+                id: "2",
+                Nome: "Felipe",
+                sobrenome: "Bertol",
+                Gereno: "M",
+                Idade: "9",
+                cidade: "Foz do Iguaçu",
+                email: "Felipebert@gmail.com",
+
+            },
+            {
+                id: "3",
+                Nome: "Carlos", 
+                sobrenome: "Ferraz",
+                Gereno: "M", 
+                Idade: "39",
+                cidade: "Santa Teresinha de Itaipu",
+                email: "CarlinFerazSTI@outlook.com"
+
+            }]
+
+            const filtrando = cadastrando.filter((F) => F.Gereno === "M" && F.Idade > 17 && F.Idade < 61)
+
+            console.log(filtrando)
+</script>
+</body>
+</html>
