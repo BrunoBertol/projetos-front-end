@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de teclas</title>
+</head>
+<body>
+    <!-- Keydown e Keyup -->
+
+    <input type="text" />
+
+    <script>
+        const inputEl = document.querySelector("input[type=text]")
+        inputEl.addEventListener("keydown", (event) => {
+            console.log("event", `${event.key} - ${event.keyCode} `)
+
+            if(event.keyCode === 13){
+                alert(`Tecla ENTER pressionada - ${inputEl.value}`)
+            }   // evento de enviar algo/pesquisar.
+        }) 
+
+        
+        // keydown é mais utilizado
+
+        // keyup é menos usado
+
+        // keypress esta sendo desusado
+    </script>
+    
+</body>
+</html>
