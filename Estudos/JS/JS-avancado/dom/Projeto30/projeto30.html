@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto30</title>
+</head>
+<body>
+    
+    <img width="300px" height="300px" src="foto.png" alt="Foto de perfil">
+
+    <h1> Seu nome </h1>
+
+    <h2> Programador Frontend
+    </h2>
+
+    <p> Conhecimento em frontend para desenvolvimento de sistemas</p>
+
+    <p>Para mais detalhes, visite meu <a href="https://github.com/brunobertol"> Github </a> </p>
+
+    <script>
+        // criando elementos dinamicamente no dom
+
+        const subtittleEl = document.createElement("h2")
+        subtittleEl.innerHTML = "Projetos"
+
+        const pjListEl = document.createElement("ul")
+        
+        const pjListItem1El = document.createElement("li")    
+        pjListItem1El.innerHTML = "Js"
+
+        const pjListItem2El = document.createElement("li")
+        pjListItem2El.innerHTML = "HTML"
+
+        const pjListItem3El = document.createElement("li")
+        pjListItem3El.innerHTML = "Laravel"
+
+        document.body.append(subtittleEl)
+        document.body.append(pjListEl)
+
+        pjListEl.append(pjListItem1El)
+        pjListEl.append(pjListItem2El)
+        pjListEl.append(pjListItem3El)
+    </script>
+</body>
+</html>
