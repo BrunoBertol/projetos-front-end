@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos</title>
+</head>
+<body>
+    <!--
+        DOMContentLoaded event
+    -->
+    <script>
+
+        /*
+        |*const main = () => {
+        |*    //func1
+        |*    //func2
+        |*    //func3
+        |*    //func4
+        |*    //func5
+        |*}
+        |*document.addEventListener("DOMContentLoaded", main)
+        |*
+        |**/
+
+        // pode ser feito da forma acima que e mais organizado.
+        //criando um fluxo de funções para o DOMContentloaded rodar.
+
+        // E
+
+        // tambem pode ser feito da forma abaixo, que e mais complicada e exige mais linhas de código...
+
+        
+        document.addEventListener("DOMContentLoaded", () => {
+        const uEl = document.getElementById("tittle")
+        console.log("uEl", uEl)
+        })
+    </script>
+
+    <h1 id="tittle">Minha página</h1>
+</body>
+</html>
