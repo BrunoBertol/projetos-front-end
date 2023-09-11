@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto29</title>
+</head>
+<body>
+
+    <!-- Alterando dados de elementos do DOM-->
+
+    <img width="250px" height="250px" src="foto.png" alt="Foto de perfil">
+
+    <h1 id="person-name" class="tittle">Seu nome</h1>
+    
+    <h2>Programador Frontend</h2>
+    
+    <p>Conhecimento em programação Frontend(HTML5, CSS3, JAVASCRIPT), tenho Tambem, conhecimento da linguagem C</p>
+
+    <p>Para mais detalhes, por favor, visite meu <a href="https://github.com/brunobertol"> Github.</a> </p>
+
+    <script>
+        const titleEl = document.querySelector("#person-name")
+        console.log("titleEl value:", titleEl.innerHTML )
+
+        titleEl.innerHTML = "Bruno Bertol"
+        titleEl.style.color = "black"
+    </script>
+</body>
+</html>

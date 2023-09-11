@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste1</title>
+</head>
+<body>
+    <!-- Alterando dados de elementos do DOM-->
+
+    <img width="250px" height="250px" src="foto copy.png" alt="Foto de perfil">
+
+    <h1 id="person-name" class="tittle">Seu nome</h1>
+    
+    <h2 id="experience" class="tittle2">Sua experiencia exemplo (Programador ful...)</h2>
+    
+    <p id="descricao" class="descricaotxt">Escreva uma descrição</p>
+
+    <p>Para mais detalhes, por favor, visite meu <a id="link" href="#"> Github.</a> </p>
+
+    <script>
+        const tittleEl = document.querySelector("#person-name")
+        console.log("tittleEl Value:", tittleEl.innerHTML)
+        tittleEl.innerHTML = "Bruno Bertol"
+    </script>
+    <script>
+        const tittleExperience = document.querySelector("#experience")
+        console.log("tittleExpreirence Value:", tittleExperience.innerHTML)
+        tittleExperience.innerHTML = "Programador Frontend"
+    </script>
+    <script>
+        const descricaoEl = document.querySelector("#descricao")
+        console.log("descricaoEl Value:", descricaoEl.innerHTML) 
+        descricaoEl.innerHTML = "Tenho conhecimento em JS, HTML, CSS, C, Git, Github"      
+    </script>
+    <script>
+        const linkEl = document.querySelector("#link")
+        console.log("linkEl Value:", linkEl.innerHTML) 
+        linkEl.innerHTML = "https://github.com/BrunoBertol/projetos-front-end"
+ </script>
+</body>
+</html>
