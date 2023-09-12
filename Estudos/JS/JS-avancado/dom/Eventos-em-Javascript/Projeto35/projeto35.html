@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="unload=*" />
+    <title>Formularios - onsubmit</title>
+</head>
+<body>
+    <form action="https://google.com/search" method="get">
+        <label for="q">* Buscar</label>  <!-- // o atributo FOR="q" significa Query, é escrito apenas "q" pois é assim que o google entende -->
+        <input type="text" name="q"/>
+        <input type="submit" value="pesquisar"/> <!-- Aqui é o Botão pesquisar -->
+    </form>
+
+    <script>
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
+        
+
+        const formEl = document.querySelector("form");
+
+            formEl.addEventListener("submit", (event) => {
+            const queryValue = event.target.querySelector("input[name=q]").value;
+            console.log("queryValue", queryValue);
+
+            if (!queryValue) {
+                event.preventDefault();
+                alert("O campo buscar é obrigatório.");
+            }
+        });
+
+        // foi necessario usar ; para codigo ser executado com exito, pois sem ; ele ainda redirecionava para o google.
+    </script>
+</body>
+</html>
