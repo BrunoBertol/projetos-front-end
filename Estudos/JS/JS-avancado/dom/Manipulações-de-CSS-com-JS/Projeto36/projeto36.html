@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de CSS</title>
+</head>
+<body>
+    <h1 id="title">Titulo da página</h1>
+    <button id="change-color">Alterar cor</button>
+
+    <script>
+        const titleEl = document.querySelector("#title");
+
+        const buttonEl = document.querySelector("#change-color");
+        buttonEl.addEventListener("click", () => {
+            // titleEl.style = "color: red; font-size: 55px" // pode ser usado dessa forma
+            // ou 
+            // da forma abaixo
+            // na forma abaixo te a mesma função que a acima, a melhor forma é a acima por ser compacta
+            titleEl.style.color = "red"
+            titleEl.style.fontSize = "55px" 
+        });
+    </script>
+</body>
+</html>
