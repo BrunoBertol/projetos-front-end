@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: lightgray;
+    font-size: 25px;
+}
+
+.Inicio{
+    display: block;
+    font-size: 40px;
+    color: black;
+    width: 245px;
+    height: 95px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.buttonTwoC{
+    display: block;
+    font-size: 40px;
+    color: black;
+    width: 245px;
+    height: 95px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.title{
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 40px;
+    color: brown;
+    background-color: beige;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+}

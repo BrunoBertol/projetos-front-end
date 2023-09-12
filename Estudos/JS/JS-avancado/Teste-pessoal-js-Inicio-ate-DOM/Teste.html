@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <button id="buttonPlay" class="Inicio">Iniciar</button>
+    <script>
+        const play = document.querySelector("#buttonPlay");
+
+        play.addEventListener("click", (event) => {
+            const titleEl = document.createElement("h1")
+            titleEl.innerHTML = "Hello, World"
+            titleEl.classList.add("title")
+
+            const paragraphOne = document.createElement("p")
+            paragraphOne.innerHTML = "Vamos brincar com as cores..., para isso, clique em Brincar"
+
+            const buttonTwo = document.createElement("button")
+            buttonTwo.innerText = "Brincar"
+            buttonTwo.classList.add("buttonTwoC")
+
+            const line = document.createElement("hr")
+
+            document.body.append(titleEl)
+            document.body.append(paragraphOne)
+            document.body.append(buttonTwo)  
+            document.body.append(line)
+        })
+    </script>
+</body>
+</html>
