@@ -22,6 +22,61 @@
             const buttonTwo = document.createElement("button")
             buttonTwo.innerText = "Brincar"
             buttonTwo.classList.add("buttonTwoC")
+            buttonTwo.addEventListener("click", (eventTwo) => {
+
+                const subtitle = document.createElement("h2")
+                subtitle.innerHTML = "('Leia') o Texto Abaixo"
+
+                const loremIpsum = document.createElement("p")
+                loremIpsum.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugiat explicabo repellendus perferendis! Explicabo odit consectetur libero sed! Laborum reprehenderit dolore quibusdam assumenda, praesentium provident molestiae iste dolores quos facilis!lorempsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere maxime autem incidunt iste vel placeat a qui, vitae atque molestiae. Modi nobis, ducimus provident quis totam temporibus voluptatem officiis aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorem, voluptatibus neque nesciunt officiis cupiditate voluptate libero facere earum necessitatibus ipsum nostrum incidunt tempore repellat molestiae autem, reiciendis eligendi iure.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ullam natus odio nostrum, commodi voluptatum at atque tempore eveniet ut? Harum repellendus ut quo nobis rem! Quisquam consequuntur aperiam deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptates aspernatur atque, ea fuga maiores, itaque aut corporis nulla officia dolor velit sed magni eum, doloremque officiis eos eligendi magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam pariatur quasi, libero alias enim itaque esse aperiam, cum nam nisi non quaerat, nesciunt ut consequatur nulla maiores qui autem?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci facere corporis fugit nemo, saepe labore natus aliquid nulla cupiditate quisquam accusamus alias voluptatum ipsa, non, officia enim dolor doloremque consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente non officiis quos pariatur ipsam laudantium, inventore aperiam et odit id nostrum. A consectetur quam minima quidem provident sunt dicta voluptatibus."
+
+                const orderListOne = document.createElement("ol")
+                const threads1Ol = document.createElement("ul")
+                threads1Ol.innerHTML = "Olá pessoal 1"
+                const threads2Ol = document.createElement("ul")
+                threads2Ol.innerHTML = "Olá pessoal 2"
+                const threads3Ol = document.createElement("ul")
+                threads3Ol.innerHTML = "Olá pessoal 3"
+                const threads4Ol = document.createElement("ul")
+                threads4Ol.innerHTML = "Olá pessoal 4"
+                const threads5Ol = document.createElement("ul")
+                threads5Ol.innerHTML = "Olá pessoal 5"
+                const threads6Ol = document.createElement("ul")
+                threads6Ol.innerHTML = "Olá pessoal 6"
+                const threads7Ol = document.createElement("ul")
+                threads7Ol.innerHTML = "Olá pessoal 7"
+                const threads8Ol = document.createElement("ul")
+                threads8Ol.innerHTML = "Olá pessoal 8"
+                const threads9Ol = document.createElement("ul")
+                threads9Ol.innerHTML = "Olá pessoal 9"
+                const threads10Ol = document.createElement("ul")
+                threads10Ol.innerHTML = "Olá pessoa 10"
+                const threads11Ol = document.createElement("ul")
+                threads11Ol.innerHTML = "Olá pessoa 11"
+                const threads12Ol = document.createElement("ul")
+                threads12Ol.innerHTML = "Olá pessoa 12"
+                
+                const loremIpsumTwo = document.createElement("p")
+                loremIpsumTwo.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugiat explicabo repellendus perferendis! Explicabo odit consectetur libero sed! Laborum reprehenderit dolore quibusdam assumenda, praesentium provident molestiae iste dolores quos facilis!lorempsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere maxime autem incidunt iste vel placeat a qui, vitae atque molestiae. Modi nobis, ducimus provident quis totam temporibus voluptatem officiis aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorem, voluptatibus neque nesciunt officiis cupiditate voluptate libero facere earum necessitatibus ipsum nostrum incidunt tempore repellat molestiae autem, reiciendis eligendi iure.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ullam natus odio nostrum, commodi voluptatum at atque tempore eveniet ut? Harum repellendus ut quo nobis rem! Quisquam consequuntur aperiam deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptates aspernatur atque, ea fuga maiores, itaque aut corporis nulla officia dolor velit sed magni eum, doloremque officiis eos eligendi magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam pariatur quasi, libero alias enim itaque esse aperiam, cum nam nisi non quaerat, nesciunt ut consequatur nulla maiores qui autem?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci facere corporis fugit nemo, saepe labore natus aliquid nulla cupiditate quisquam accusamus alias voluptatum ipsa, non, officia enim dolor doloremque consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente non officiis quos pariatur ipsam laudantium, inventore aperiam et odit id nostrum. A consectetur quam minima quidem provident sunt dicta voluptatibus."
+                
+                document.body.append(subtitle)
+                document.body.append(loremIpsum)
+                document.body.append(orderListOne)
+                orderListOne.append(threads1Ol)
+                orderListOne.append(threads2Ol)
+                orderListOne.append(threads3Ol)
+                orderListOne.append(threads4Ol)
+                orderListOne.append(threads5Ol)
+                orderListOne.append(threads6Ol)
+                orderListOne.append(threads7Ol)
+                orderListOne.append(threads8Ol)
+                orderListOne.append(threads9Ol)
+                orderListOne.append(threads10Ol)
+                orderListOne.append(threads11Ol)
+                orderListOne.append(threads12Ol)
+                document.body.append(loremIpsumTwo)
+
+            })
 
             const line = document.createElement("hr")
 
@@ -29,6 +84,7 @@
             document.body.append(paragraphOne)
             document.body.append(buttonTwo)  
             document.body.append(line)
+
         })
     </script>
 </body>
